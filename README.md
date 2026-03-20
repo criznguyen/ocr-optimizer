@@ -2,7 +2,7 @@
 
 Multi-pass OCR pipeline using [GLM-OCR](https://huggingface.co/THUDM/glm-ocr) (1.1B params) via [Ollama](https://ollama.com). Preprocesses images, splits into overlapping column crops, runs OCR on each region, and merges results with a smart line-level alignment algorithm.
 
-Optionally trains [neural-memory](https://github.com/criznguyen/neural-memory) with extracted text.
+Optionally trains [neural-memory](https://github.com/nhadaututtheky/neural-memory) with extracted text.
 
 ## How it works
 

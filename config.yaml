@@ -1,0 +1,23 @@
+ollama:
+  base_url: "http://localhost:11434"
+  model: "glm-ocr:latest"
+  prompt: "OCR this image. Extract all text exactly as shown."
+  timeout: 180
+
+preprocess:
+  upscale_factor: 2
+  contrast: 1.3
+  sharpen_passes: 0
+  sharpness: 1.0
+  binarize: false
+  binarize_threshold: 140
+
+crop:
+  strategy: "columns"    # none, columns, grid
+  num_columns: 2
+  overlap_px: 20
+
+pipeline:
+  passes_per_crop: 1
+  merge_similarity_threshold: 0.6
+  min_line_length: 10
